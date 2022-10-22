@@ -25,14 +25,12 @@ module.exports = {
     },
     screens: {
       "1bp": { max: "1110px" },
-      "2bp": { max: "961px" },
-      "3bp": { max: "768px" },
+      "2bp": { max: "870px" },
+      "3bp": { max: "720px" },
       "4bp": { max: "608px" },
       "5bp": { max: "375px" },
     },
-    extend: {
-      
-    },
+    extend: {},
   },
   plugins: [],
 };

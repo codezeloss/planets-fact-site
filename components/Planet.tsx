@@ -65,9 +65,9 @@ const Planet = ({
   };
 
   return (
-    <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px]">
-      <div className="mb-[87px] flex justify-between">
-        <div className="flex justify-center items-center w-[100%]">
+    <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px] 1bp:mt-[146px] 1bp:w-[100%]">
+      <div className="mb-[87px] flex justify-between 1bp:flex-col 1bp:gap-[130px] 1bp:w-[100%] 2bp:mb-[27px]">
+        <div className="flex justify-center items-center">
           <div>
             {overviewClicked && (
               <motion.div
@@ -147,35 +147,37 @@ const Planet = ({
           </div>
         </div>
 
-        <div className="w-[350px]">
-          <h1 className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px]">
-            {title}
-          </h1>
+        <div className="w-[350px] 1bp:w-[100%] 1bp:flex 1bp:gap-[69px] 1bp:flex-row 1bp:items-center 1bp:justify-between">
+          <div className="1bp:w-[100%]">
+            <h1 className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
+              {title}
+            </h1>
 
-          <p className="font-spartan font-normal text-white text-[14px] leading-[25px] mb-[24px]">
-            {overviewClicked && textOverview}
-            {structureClicked && textStructure}
-            {geologyClicked && textGeology}
-          </p>
+            <p className="font-spartan font-normal text-white text-[14px] leading-[25px] mb-[24px]">
+              {overviewClicked && textOverview}
+              {structureClicked && textStructure}
+              {geologyClicked && textGeology}
+            </p>
 
-          <div className="flex font-spartan text-white/[.5] mb-[39px]">
-            <p className="mr-[4px]">Source : </p>
-            <Link href={source}>
-              <a
-                target="_blank"
-                className="font-bold underline mr-[8px] cursor-pointer"
-              >
-                {sourceName}
-              </a>
-            </Link>
-            <div className="max-w-[12px max-h-[12px]">
-              <Image
-                className="w-[12px h-[12px]"
-                src={icons.iconSource}
-                alt=""
-                width="12px"
-                height="12px"
-              />
+            <div className="flex font-spartan text-white/[.5] mb-[39px] 2bp:mb-0">
+              <p className="mr-[4px]">Source : </p>
+              <Link href={source}>
+                <a
+                  target="_blank"
+                  className="font-bold underline mr-[8px] cursor-pointer"
+                >
+                  {sourceName}
+                </a>
+              </Link>
+              <div className="max-w-[12px max-h-[12px]">
+                <Image
+                  className="w-[12px h-[12px]"
+                  src={icons.iconSource}
+                  alt=""
+                  width="12px"
+                  height="12px"
+                />
+              </div>
             </div>
           </div>
 
@@ -202,7 +204,7 @@ const Planet = ({
         </div>
       </div>
 
-      <div className="flex space-x-[30px]">
+      <div className="flex space-x-[30px] 1bp:space-x-[11px] ">
         <Stat title="Rotation time" info={rotationInfo} />
         <Stat title="Revolution time" info={revolutionInfo} />
         <Stat title="Radius" info={radiusInfo} />
