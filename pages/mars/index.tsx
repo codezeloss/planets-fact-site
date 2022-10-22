@@ -25,7 +25,7 @@ const Mars = () => {
         revolutionInfo={data.mars.infos.revolution}
         radiusInfo={data.mars.infos.radius}
         tempInfo={data.mars.infos.temperature}
-        bgColor="red"
+        bgColor={data.mars.color}
       />
     </>
   );

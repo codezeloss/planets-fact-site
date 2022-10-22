@@ -1,6 +1,6 @@
 # Frontend Mentor - Planets fact site
 
-Live: [link]('')
+Live: [link]('https://planets-fact-site-pi.vercel.app/')
 
 ![Planets fact site coding challenge](./preview.jpg)
 

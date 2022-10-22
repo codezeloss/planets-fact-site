@@ -25,7 +25,7 @@ const Mercury = () => {
         revolutionInfo={data.mercury.infos.revolution}
         radiusInfo={data.mercury.infos.radius}
         tempInfo={data.mercury.infos.temperature}
-        bgColor="dark-cyan"
+        bgColor={data.mercury.color}
       />
     </>
   );

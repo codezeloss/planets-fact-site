@@ -25,7 +25,7 @@ const Venus = () => {
         revolutionInfo={data.venus.infos.revolution}
         radiusInfo={data.venus.infos.radius}
         tempInfo={data.venus.infos.temperature}
-        bgColor="light-orange"
+        bgColor={data.venus.color}
       />
     </>
   );

@@ -25,7 +25,7 @@ const Uranus = () => {
         revolutionInfo={data.uranus.infos.revolution}
         radiusInfo={data.uranus.infos.radius}
         tempInfo={data.uranus.infos.temperature}
-        bgColor="cyan"
+        bgColor={data.uranus.color}
       />
     </>
   );

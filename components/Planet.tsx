@@ -52,8 +52,8 @@ const Planet = ({
   const structureClickHandler = () => {
     setStructureIsClicked(true);
 
-    setGeologyIsClicked(false);
     setOverviewIsClicked(false);
+    setGeologyIsClicked(false);
   };
 
   const geologyClickHandler = () => {
@@ -102,7 +102,6 @@ const Planet = ({
       </div>
       <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px] 1bp:mt-[146px] 1bp:w-[100%] relative z-[20]">
         <div className="mb-[87px] flex justify-between 1bp:flex-col 1bp:gap-[130px] 1bp:w-[100%] 2bp:mb-[27px]">
-          {/* Images */}
           <div className="flex justify-center items-center w-[100%]">
             <div>
               {overviewClicked && (
@@ -184,7 +183,6 @@ const Planet = ({
           </div>
 
           <div className="w-[350px] 1bp:w-[100%] 1bp:flex 1bp:gap-[69px] 1bp:flex-row 1bp:items-center 1bp:justify-between">
-            {/* info card */}
             <div className="1bp:w-[100%] 3bp:text-center">
               <h1 className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
                 {title}
@@ -218,23 +216,28 @@ const Planet = ({
               </div>
             </div>
 
-            {/* Buttons */}
             <div className="flex flex-col space-y-[16px] 3bp:hidden">
               <div
                 onClick={overviewClickHandler}
-                className={`${overviewClicked ? `bg-${bgColor}` : ""}`}
+                className={`${
+                  !overviewClicked ? `` : `bg-${bgColor}`
+                }`}
               >
                 <Button num="01" text="Overview" />
               </div>
               <div
                 onClick={structureClickHandler}
-                className={`${structureClicked ? `bg-${bgColor}` : ""}`}
+                className={`${
+                  !structureClicked ? `` : `bg-${bgColor}`
+                }`}
               >
                 <Button num="02" text="Internal Structure" />
               </div>
               <div
                 onClick={geologyClickHandler}
-                className={`${geologyClicked ? `bg-${bgColor}` : ""}`}
+                className={`${
+                  !geologyClicked ? `` : `bg-${bgColor}`
+                }`}
               >
                 <Button num="03" text="Surface Geology" />
               </div>
@@ -242,7 +245,6 @@ const Planet = ({
           </div>
         </div>
 
-        {/* Stats */}
         <div className="flex space-x-[30px] 1bp:space-x-[11px] 4bp:flex-col 4bp:space-x-0 4bp:space-y-[8px]">
           <Stat title="Rotation time" info={rotationInfo} />
           <Stat title="Revolution time" info={revolutionInfo} />

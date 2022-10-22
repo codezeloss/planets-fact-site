@@ -25,7 +25,7 @@ const Neptune = () => {
         revolutionInfo={data.neptune.infos.revolution}
         radiusInfo={data.neptune.infos.radius}
         tempInfo={data.neptune.infos.temperature}
-        bgColor="dark-blue"
+        bgColor={data.neptune.color}
       />
     </>
   );
