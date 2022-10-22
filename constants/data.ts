@@ -1,5 +1,3 @@
-import images from "./images";
-
 const mercury = {
   name: "Mercury",
   overview: {
@@ -175,7 +173,7 @@ const saturn = {
     temperature: "-138°c",
   },
   images: {
-    planet:  "/assets/planet-saturn.svg",
+    planet: "/assets/planet-saturn.svg",
     internal: "/assets/planet-saturn-internal.svg",
     geology: "/assets/geology-saturn.png",
   },
