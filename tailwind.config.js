@@ -24,7 +24,7 @@ module.exports = {
       spartan: ["League Spartan", "sans-serif"],
     },
     screens: {
-      "1bp": { max: "1105px" },
+      "1bp": { max: "1110px" },
       "2bp": { max: "961px" },
       "3bp": { max: "768px" },
       "4bp": { max: "608px" },
