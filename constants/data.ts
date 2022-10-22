@@ -24,9 +24,9 @@ const mercury = {
     temperature: "430°c",
   },
   images: {
-    planet: images.planetMercury,
-    internal: images.internalMercury,
-    geology: images.geologyMercury,
+    planet: "/assets/planet-mercury.svg",
+    internal: "/assets/planet-mercury-internal.svg",
+    geology: "/assets/geology-mercury.png",
   },
 };
 
@@ -54,9 +54,9 @@ const venus = {
     temperature: "471°c",
   },
   images: {
-    planet: images.planetVenus,
-    internal: images.internalVenus,
-    geology: images.geologyVenus,
+    planet: "/assets/planet-venus.svg",
+    internal: "/assets/planet-venus-internal.svg",
+    geology: "/assets/geology-venus.png",
   },
 };
 
@@ -84,9 +84,9 @@ const earth = {
     temperature: "16°c",
   },
   images: {
-    planet: images.planetEarth,
-    internal: images.internalEarth,
-    geology: images.geologyEarth,
+    planet: "/assets/planet-earth.svg",
+    internal: "/assets/planet-earth-internal.svg",
+    geology: "/assets/geology-earth.png",
   },
 };
 
@@ -114,9 +114,9 @@ const mars = {
     temperature: "-28°c",
   },
   images: {
-    planet: images.planetMars,
-    internal: images.internalMars,
-    geology: images.geologyMars,
+    planet: "/assets/planet-Mars.svg",
+    internal: "/assets/planet-Mars-internal.svg",
+    geology: "/assets/geology-Mars.png",
   },
 };
 
@@ -145,9 +145,9 @@ const jupiter = {
     temperature: "-108°c",
   },
   images: {
-    planet: images.planetJupiter,
-    internal: images.internalJupiter,
-    geology: images.geologyJupiter,
+    planet: "/assets/planet-jupiter.svg",
+    internal: "/assets/planet-jupiter-internal.svg",
+    geology: "/assets/geology-jupiter.png",
   },
 };
 
@@ -175,9 +175,9 @@ const saturn = {
     temperature: "-138°c",
   },
   images: {
-    planet: images.planetSaturn,
-    internal: images.internalSaturn,
-    geology: images.geologySaturn,
+    planet:  "/assets/planet-saturn.svg",
+    internal: "/assets/planet-saturn-internal.svg",
+    geology: "/assets/geology-saturn.png",
   },
 };
 
@@ -205,9 +205,9 @@ const uranus = {
     temperature: "-195°c",
   },
   images: {
-    planet: images.planetUranus,
-    internal: images.internalUranus,
-    geology: images.geologyUranus,
+    planet: "/assets/planet-uranus.svg",
+    internal: "/assets/planet-uranus-internal.svg",
+    geology: "/assets/geology-uranus.png",
   },
 };
 
@@ -235,9 +235,9 @@ const neptune = {
     temperature: "-201°c",
   },
   images: {
-    planet: images.planetNeptune,
-    internal: images.internalNeptune,
-    geology: images.geologyNeptune,
+    planet: "/assets/planet-neptune.svg",
+    internal: "/assets/planet-neptune-internal.svg",
+    geology: "/assets/geology-neptune.png",
   },
 };
 
