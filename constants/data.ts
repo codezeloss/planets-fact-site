@@ -1,3 +1,35 @@
+import mercuryOverview from "../assets/planet-mercury.svg";
+import mercuryStructure from "../assets/planet-mercury-internal.svg";
+import mercuryGeology from "../assets/geology-mercury.png";
+
+import venusOverview from "../assets/planet-venus.svg";
+import venusStructure from "../assets/planet-venus-internal.svg";
+import venusGeology from "../assets/geology-venus.png";
+
+import earthOverview from "../assets/planet-earth.svg";
+import earthStructure from "../assets/planet-earth-internal.svg";
+import earthGeology from "../assets/geology-earth.png";
+
+import marsOverview from "../assets/planet-mars.svg";
+import marsStructure from "../assets/planet-mars-internal.svg";
+import marsGeology from "../assets/geology-mars.png";
+
+import jupiterOverview from "../assets/planet-jupiter.svg";
+import jupiterStructure from "../assets/planet-jupiter-internal.svg";
+import jupiterGeology from "../assets/geology-jupiter.png";
+
+import saturnOverview from "../assets/planet-saturn.svg";
+import saturnStructure from "../assets/planet-saturn-internal.svg";
+import saturnGeology from "../assets/geology-saturn.png";
+
+import uranusOverview from "../assets/planet-uranus.svg";
+import uranusStructure from "../assets/planet-uranus-internal.svg";
+import uranusGeology from "../assets/geology-uranus.png";
+
+import neptuneOverview from "../assets/planet-neptune.svg";
+import neptuneStructure from "../assets/planet-neptune-internal.svg";
+import neptuneGeology from "../assets/geology-neptune.png";
+
 const mercury = {
   name: "Mercury",
   overview: {
@@ -22,9 +54,9 @@ const mercury = {
     temperature: "430°c",
   },
   images: {
-    planet: "/assets/planet-mercury.svg",
-    internal: "/assets/planet-mercury-internal.svg",
-    geology: "/assets/geology-mercury.png",
+    planet: mercuryOverview,
+    internal: mercuryStructure,
+    geology: mercuryGeology,
   },
 };
 
@@ -52,9 +84,9 @@ const venus = {
     temperature: "471°c",
   },
   images: {
-    planet: "/assets/planet-venus.svg",
-    internal: "/assets/planet-venus-internal.svg",
-    geology: "/assets/geology-venus.png",
+    planet: venusOverview,
+    internal: venusStructure,
+    geology: venusGeology,
   },
 };
 
@@ -82,9 +114,9 @@ const earth = {
     temperature: "16°c",
   },
   images: {
-    planet: "/assets/planet-earth.svg",
-    internal: "/assets/planet-earth-internal.svg",
-    geology: "/assets/geology-earth.png",
+    planet: earthOverview,
+    internal: earthStructure,
+    geology: earthGeology,
   },
 };
 
@@ -112,9 +144,9 @@ const mars = {
     temperature: "-28°c",
   },
   images: {
-    planet: "/assets/planet-Mars.svg",
-    internal: "/assets/planet-Mars-internal.svg",
-    geology: "/assets/geology-Mars.png",
+    planet: marsOverview,
+    internal: marsStructure,
+    geology: marsGeology,
   },
 };
 
@@ -143,9 +175,9 @@ const jupiter = {
     temperature: "-108°c",
   },
   images: {
-    planet: "/assets/planet-jupiter.svg",
-    internal: "/assets/planet-jupiter-internal.svg",
-    geology: "/assets/geology-jupiter.png",
+    planet: jupiterOverview,
+    internal: jupiterStructure,
+    geology: jupiterGeology,
   },
 };
 
@@ -173,9 +205,9 @@ const saturn = {
     temperature: "-138°c",
   },
   images: {
-    planet: "/assets/planet-saturn.svg",
-    internal: "/assets/planet-saturn-internal.svg",
-    geology: "/assets/geology-saturn.png",
+    planet: saturnOverview,
+    internal: saturnStructure,
+    geology: saturnGeology,
   },
 };
 
@@ -203,9 +235,9 @@ const uranus = {
     temperature: "-195°c",
   },
   images: {
-    planet: "/assets/planet-uranus.svg",
-    internal: "/assets/planet-uranus-internal.svg",
-    geology: "/assets/geology-uranus.png",
+    planet: uranusOverview,
+    internal: uranusStructure,
+    geology: uranusGeology,
   },
 };
 
@@ -233,9 +265,9 @@ const neptune = {
     temperature: "-201°c",
   },
   images: {
-    planet: "/assets/planet-neptune.svg",
-    internal: "/assets/planet-neptune-internal.svg",
-    geology: "/assets/geology-neptune.png",
+    planet: neptuneOverview,
+    internal: neptuneStructure,
+    geology: neptuneGeology,
   },
 };
 
