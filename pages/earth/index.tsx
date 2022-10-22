@@ -25,7 +25,7 @@ const Earth = () => {
         revolutionInfo={data.earth.infos.revolution}
         radiusInfo={data.earth.infos.radius}
         tempInfo={data.earth.infos.temperature}
-        bgColor="bg-purple"
+        bgColor="purple"
       />
     </>
   );

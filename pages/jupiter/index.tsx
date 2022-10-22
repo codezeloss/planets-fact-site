@@ -25,7 +25,7 @@ const Jupiter = () => {
         revolutionInfo={data.jupiter.infos.revolution}
         radiusInfo={data.jupiter.infos.radius}
         tempInfo={data.jupiter.infos.temperature}
-        bgColor="bg-red"
+        bgColor="red"
       />
     </>
   );

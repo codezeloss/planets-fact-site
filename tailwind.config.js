@@ -27,7 +27,7 @@ module.exports = {
       "1bp": { max: "1110px" },
       "2bp": { max: "870px" },
       "3bp": { max: "720px" },
-      "4bp": { max: "608px" },
+      "4bp": { max: "636px" },
       "5bp": { max: "375px" },
     },
     extend: {},

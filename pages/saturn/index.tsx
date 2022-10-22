@@ -25,7 +25,7 @@ const Saturn = () => {
         revolutionInfo={data.saturn.infos.revolution}
         radiusInfo={data.saturn.infos.radius}
         tempInfo={data.saturn.infos.temperature}
-        bgColor="bg-dark-orange"
+        bgColor="dark-orange"
       />
     </>
   );
