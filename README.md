@@ -1,6 +1,6 @@
 # Frontend Mentor - Planets fact site
 
-Live: [link(soon)]('')
+Live: [link]('')
 
 ![Planets fact site coding challenge](./preview.jpg)
 
