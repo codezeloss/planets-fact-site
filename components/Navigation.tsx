@@ -26,7 +26,7 @@ const Navigation = ({ title, toPath, color, navBtnClicked }: Props) => {
             <Image
               className="w-[6px] h-[8px]"
               src={icons.iconChevron}
-              alt=""
+              alt="Chevron icon"
               width="6px"
               height="8px"
             />

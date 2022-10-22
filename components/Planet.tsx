@@ -119,7 +119,7 @@ const Planet = ({
                   <Image
                     className="animate-[wiggle_1s_ease-in-out_infinite]"
                     src={imageOverview}
-                    alt=""
+                    alt="Overview image"
                     width="290px"
                     height="290px"
                   />
@@ -141,7 +141,7 @@ const Planet = ({
                   <Image
                     className="animate-[wiggle_1s_ease-in-out_infinite]"
                     src={imageStructure}
-                    alt=""
+                    alt="Structure Image"
                     width="290px"
                     height="290px"
                   />
@@ -155,7 +155,7 @@ const Planet = ({
                     <Image
                       className="animate-[wiggle_1s_ease-in-out_infinite]"
                       src={imageOverview}
-                      alt=""
+                      alt="Overview Image"
                       width="290px"
                       height="290px"
                     />
@@ -173,7 +173,7 @@ const Planet = ({
                     <Image
                       className="animate-[wiggle_1s_ease-in-out_infinite]"
                       src={imageGeology}
-                      alt=""
+                      alt="Surface Image"
                       width="163px"
                       height="199px"
                     />
@@ -210,7 +210,7 @@ const Planet = ({
                   <Image
                     className="w-[12px h-[12px]"
                     src={icons.iconSource}
-                    alt=""
+                    alt="source icon"
                     width="12px"
                     height="12px"
                   />
