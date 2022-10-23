@@ -119,8 +119,8 @@ const Planet = ({
                     className="animate-[wiggle_1s_ease-in-out_infinite]"
                     src={imageOverview}
                     alt="Overview image"
-                    width="290px"
-                    height="290px"
+                    width="400px"
+                    height="400px"
                   />
                 </motion.div>
               )}
@@ -141,8 +141,8 @@ const Planet = ({
                     className="animate-[wiggle_1s_ease-in-out_infinite]"
                     src={imageStructure}
                     alt="Structure Image"
-                    width="290px"
-                    height="290px"
+                    width="400px"
+                    height="400px"
                   />
                 </motion.div>
               )}
@@ -155,12 +155,12 @@ const Planet = ({
                       className="animate-[wiggle_1s_ease-in-out_infinite]"
                       src={imageOverview}
                       alt="Overview Image"
-                      width="290px"
-                      height="290px"
+                      width="400px"
+                      height="400px"
                     />
                   </div>
                   <motion.div
-                    className="absolute z-[10] mt-[226px] box"
+                    className="absolute z-[10] mt-[275px] box"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
