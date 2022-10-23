@@ -219,27 +219,33 @@ const Planet = ({
             <div className="flex flex-col space-y-[16px] 3bp:hidden">
               <div
                 onClick={overviewClickHandler}
-                className={`${
-                  !overviewClicked ? `` : `bg-${bgColor}`
-                }`}
+                className={`${overviewClicked ? "bg-white " : " "}`}
               >
-                <Button num="01" text="Overview" />
+                <Button
+                  num="01"
+                  text="Overview"
+                  color={`${overviewClicked ? "text-universe-blue" : " "}`}
+                />
               </div>
               <div
                 onClick={structureClickHandler}
-                className={`${
-                  !structureClicked ? `` : `bg-${bgColor}`
-                }`}
+                className={`${structureClicked ? "bg-white" : " "}`}
               >
-                <Button num="02" text="Internal Structure" />
+                <Button
+                  num="02"
+                  text="Internal Structure"
+                  color={`${structureClicked ? "text-universe-blue" : " "}`}
+                />
               </div>
               <div
                 onClick={geologyClickHandler}
-                className={`${
-                  !geologyClicked ? `` : `bg-${bgColor}`
-                }`}
+                className={`${geologyClicked ? "bg-white" : " "}`}
               >
-                <Button num="03" text="Surface Geology" />
+                <Button
+                  num="03"
+                  text="Surface Geology"
+                  color={`${geologyClicked ? "text-universe-blue" : " "}`}
+                />
               </div>
             </div>
           </div>
