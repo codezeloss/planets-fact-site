@@ -12,7 +12,7 @@ interface Props {
 const Navigation = ({ title, toPath, color, navBtnClicked }: Props) => {
   return (
     <div onClick={navBtnClicked}>
-      <Link href={`/${toPath}`}>
+      <Link href={`/${toPath}`}  rel="prefetch">
         <div className="flex flex-row justify-between border-b-[1px] border-b-white/[.1] py-[20px] w-[100%] top-0 right-0 bg-universe-blue cursor-pointer">
           <div className="flex space-x-[24px]">
             <div className={`w-[20px] h-[20px] rounded-full bg-${color}`}></div>

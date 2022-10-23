@@ -121,6 +121,7 @@ const Planet = ({
                     alt="Overview image"
                     width="400px"
                     height="400px"
+                    priority
                   />
                 </motion.div>
               )}
@@ -143,6 +144,7 @@ const Planet = ({
                     alt="Structure Image"
                     width="400px"
                     height="400px"
+                    priority
                   />
                 </motion.div>
               )}
@@ -156,6 +158,7 @@ const Planet = ({
                       alt="Overview Image"
                       width="400px"
                       height="400px"
+                      priority
                     />
                   </div>
                   <motion.div
@@ -173,6 +176,7 @@ const Planet = ({
                       alt="Surface Image"
                       width="163px"
                       height="199px"
+                      priority
                     />
                   </motion.div>
                 </div>
@@ -182,9 +186,9 @@ const Planet = ({
 
           <div className="w-[350px] 1bp:w-[100%] 1bp:flex 1bp:gap-[69px] 1bp:flex-row 1bp:items-center 1bp:justify-between">
             <div className="1bp:w-[100%] 3bp:text-center">
-              <h1 className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
+              <p className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
                 {title}
-              </h1>
+              </p>
 
               <p className="font-spartan font-normal text-white text-[14px] leading-[25px] mb-[24px]">
                 {overviewClicked && textOverview}
