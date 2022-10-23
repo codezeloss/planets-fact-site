@@ -63,6 +63,9 @@ const Planet = ({
     setStructureIsClicked(false);
   };
 
+  let bgo = `bg-${bgColor}`;
+  console.log(bgo);
+
   return (
     <>
       <div className="hidden 3bp:flex flex-row font-spartan font-bold text-[14px] leading-[10px] tracking-[1.92857px] uppercase text-white/[.5] px-[32px] justify-between items-center border-b-[1px] border-b-gray/[.2]">
@@ -214,7 +217,11 @@ const Planet = ({
               </div>
             </div>
 
-            <div className="flex flex-col space-y-[16px] 3bp:hidden">
+            <div
+              className={`flex flex-col space-y-[16px] 3bp:hidden ${
+                bgo ? bgo : ""
+              }`}
+            >
               <div
                 onClick={overviewClickHandler}
                 className={`${overviewClicked ? "bg-white" : " "}`}

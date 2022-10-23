@@ -36,7 +36,7 @@ const Navbar = () => {
               Mercury
             </a>
           </Link>
-          <Link href="/venus">
+          <Link href="/venus" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/venus"
@@ -47,7 +47,7 @@ const Navbar = () => {
               Venus
             </a>
           </Link>
-          <Link href="/earth">
+          <Link href="/earth" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/earth"
@@ -58,7 +58,7 @@ const Navbar = () => {
               Earth
             </a>
           </Link>
-          <Link href="/mars">
+          <Link href="/mars" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/mars"
@@ -69,7 +69,7 @@ const Navbar = () => {
               Mars
             </a>
           </Link>
-          <Link href="/jupiter">
+          <Link href="/jupiter" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/jupiter"
@@ -80,7 +80,7 @@ const Navbar = () => {
               Jupiter
             </a>
           </Link>
-          <Link href="/saturn">
+          <Link href="/saturn" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/saturn"
@@ -91,7 +91,7 @@ const Navbar = () => {
               Saturn
             </a>
           </Link>
-          <Link href="/uranus">
+          <Link href="/uranus" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/uranus"
@@ -102,7 +102,7 @@ const Navbar = () => {
               Uranus
             </a>
           </Link>
-          <Link href="/neptune">
+          <Link href="/neptune" passHref>
             <a
               className={`py-[32px] 1bp:py-[12px] flex justify-center align-center border-t-[4px] 1bp:border-t-0 1bp:border-b-[4px] ${
                 currentRoute === "/neptune"
