@@ -121,7 +121,6 @@ const Planet = ({
                     alt="Overview image"
                     width="400px"
                     height="400px"
-                    priority
                   />
                 </motion.div>
               )}
@@ -144,7 +143,6 @@ const Planet = ({
                     alt="Structure Image"
                     width="400px"
                     height="400px"
-                    priority
                   />
                 </motion.div>
               )}
@@ -158,7 +156,6 @@ const Planet = ({
                       alt="Overview Image"
                       width="400px"
                       height="400px"
-                      priority
                     />
                   </div>
                   <motion.div
@@ -176,7 +173,6 @@ const Planet = ({
                       alt="Surface Image"
                       width="163px"
                       height="199px"
-                      priority
                     />
                   </motion.div>
                 </div>
