@@ -100,13 +100,13 @@ const Planet = ({
           </p>
         </div>
       </div>
-      <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px] 1bp:mt-[146px] 1bp:w-[100%] relative z-[20]">
-        <div className="mb-[87px] flex justify-between 1bp:flex-col 1bp:gap-[130px] 1bp:w-[100%] 2bp:mb-[27px]">
+      <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px] 1bp:mt-[146px] 1bp:w-[100%] relative z-[20] 3bp:mt-[50px]">
+        <div className="mb-[87px] flex justify-between 1bp:flex-col 1bp:gap-[130px] 1bp:w-[100%] 2bp:mb-[27px] 3bp:gap-[50px]">
           <div className="flex justify-center items-center w-[100%]">
             <div>
               {overviewClicked && (
                 <motion.div
-                  className="box"
+                  className="3bp:max-w-[290px] 3bp:max-h-[290px] box"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -117,7 +117,7 @@ const Planet = ({
                 >
                   <Image
                     className="animate-[wiggle_1s_ease-in-out_infinite]"
-                    src={imageOverview}
+                    src={imageOverview ? imageOverview : ""}
                     alt="Overview image"
                     width="400px"
                     height="400px"
@@ -128,7 +128,7 @@ const Planet = ({
             <div>
               {structureClicked && (
                 <motion.div
-                  className="box"
+                  className="3bp:max-w-[290px] 3bp:max-h-[290px] box"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -139,7 +139,7 @@ const Planet = ({
                 >
                   <Image
                     className="animate-[wiggle_1s_ease-in-out_infinite]"
-                    src={imageStructure}
+                    src={imageStructure ? imageStructure : ""}
                     alt="Structure Image"
                     width="400px"
                     height="400px"
@@ -149,18 +149,17 @@ const Planet = ({
             </div>
             <div>
               {geologyClicked && (
-                <div className="flex justify-center">
-                  <div>
+                <div className="flex justify-center 3bp:mb-[80px]">
+                  <div className="3bp:max-w-[290px] 3bp:max-h-[290px]">
                     <Image
-                      className="animate-[wiggle_1s_ease-in-out_infinite]"
-                      src={imageOverview}
+                      src={imageOverview ? imageOverview : ""}
                       alt="Overview Image"
                       width="400px"
                       height="400px"
                     />
                   </div>
                   <motion.div
-                    className="absolute z-[10] mt-[275px] box"
+                    className="absolute z-[10] mt-[275px] box 3bp:mt-[190px]"
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
@@ -170,8 +169,7 @@ const Planet = ({
                     }}
                   >
                     <Image
-                      className="animate-[wiggle_1s_ease-in-out_infinite]"
-                      src={imageGeology}
+                      src={imageGeology ? imageGeology : ""}
                       alt="Surface Image"
                       width="163px"
                       height="199px"
@@ -207,7 +205,7 @@ const Planet = ({
                 <div className="max-w-[12px max-h-[12px]">
                   <Image
                     className="w-[12px h-[12px]"
-                    src={icons.iconSource}
+                    src={icons?.iconSource}
                     alt="source icon"
                     width="12px"
                     height="12px"
@@ -219,7 +217,7 @@ const Planet = ({
             <div className="flex flex-col space-y-[16px] 3bp:hidden">
               <div
                 onClick={overviewClickHandler}
-                className={`${overviewClicked ? "bg-white " : " "}`}
+                className={`${overviewClicked ? "bg-white" : " "}`}
               >
                 <Button
                   num="01"

@@ -7,9 +7,7 @@ interface Props {
 const NavMobile = ({ navBtnClicked }: Props) => {
   return (
     <>
-      <div
-        className="hidden 3bp:inline absolute pt-[22px] px-[32px] w-[100%] bg-universe-blue z-[30]"
-      >
+      <div className="hidden 3bp:inline absolute pt-[22px] px-[32px] w-[100%] bg-universe-blue z-[30]">
         <Navigation
           title="Mercury"
           toPath="mercury"
