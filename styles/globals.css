@@ -26,7 +26,7 @@ a {
 }
 
 /* @layer base {
-  body {
-    @apply bg-[url('../assets/background-stars.svg')];
+  .animo {
+    @apply animate-[wiggle_1s_ease-in-out_infinite];
   }
 } */
