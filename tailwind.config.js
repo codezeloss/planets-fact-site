@@ -30,7 +30,11 @@ module.exports = {
       "4bp": { max: "636px" },
       "5bp": { max: "375px" },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        stars: "url('/assets/background-stars.svg')",
+      },
+    },
   },
   plugins: [],
 };
