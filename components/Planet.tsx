@@ -84,7 +84,7 @@ const Planet = ({
   const navClasses = `py-[20px] ${
     currentRoute === "/mercury"
       ? "border-b-dark-cyan border-b-[4px] text-white"
-      : ""
+      : "border-b-purple border-b-[4px] text-white"
   } ${
     currentRoute === "/venus"
       ? "border-b-light-orange border-b-[4px] text-white"
@@ -126,7 +126,7 @@ const Planet = ({
       </div>
       <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px] 1bp:mt-[146px] 1bp:w-[100%] relative z-[20] 3bp:mt-[50px]">
         <div className="mb-[87px] flex justify-between 1bp:flex-col 1bp:gap-[130px] 1bp:w-[100%] 2bp:mb-[27px] 3bp:gap-[50px]">
-          <section className="flex justify-center items-center w-[100%]">
+          <div className="flex justify-center items-center w-[100%]">
             <div>
               {overviewClicked && (
                 <motion.div
@@ -202,13 +202,13 @@ const Planet = ({
                 </div>
               )}
             </div>
-          </section>
+          </div>
 
           <div className="w-[350px] 1bp:w-[100%] 1bp:flex 1bp:gap-[69px] 1bp:flex-row 1bp:items-center 1bp:justify-between">
             <section className="1bp:w-[100%] 3bp:text-center">
-              <p className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
+              <h2 className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
                 {title}
-              </p>
+              </h2>
 
               <p className="font-spartan font-normal text-white text-[14px] leading-[25px] mb-[24px]">
                 {overviewClicked && textOverview}
@@ -238,7 +238,7 @@ const Planet = ({
               </div>
             </section>
 
-            <section className={`flex flex-col space-y-[16px] 3bp:hidden`}>
+            <div className={`flex flex-col space-y-[16px] 3bp:hidden`}>
               <div onClick={overviewClickHandler}>
                 <Button
                   num="01"
@@ -260,7 +260,7 @@ const Planet = ({
                   color={`${geologyClicked ? `${bgColor}` : ""}`}
                 />
               </div>
-            </section>
+            </div>
           </div>
         </div>
 

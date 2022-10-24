@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Earth from "./earth";
-import stars from "/assets/background-stars.svg";
 
 const Home = () => {
   return (

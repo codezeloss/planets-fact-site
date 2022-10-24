@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="max-w-[1440px] mx-auto text-white flex items-center justify-between border-b-gray/[.2] border-b-[1px] px-[32px] 1bp:flex-col 1bp:mt-[32px] 1bp:gap-[22px] 3bp:flex-row 3bp:mt-0 3bp:py-[17px] 3bp:items-center">
-        <Link href="/">
+        <Link href="/earth">
           <h1 className="uppercase text-white font-antonio font-normal text-[28px] tracking-[-1.05px] cursor-pointer">
             The planets
           </h1>
