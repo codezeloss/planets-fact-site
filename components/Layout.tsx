@@ -6,10 +6,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
+    <div className="bg-[url('/assets/background-stars.svg')">
       <Navbar />
       {children}
-    </>
+    </div>
   );
 };
 
