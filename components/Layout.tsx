@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import stars from "/assets/background-stars.svg"
 
 interface Props {
   children: any;
@@ -6,7 +7,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="bg-[url('/assets/background-stars.svg')">
+    <div className={`bg-${stars}`}>
       <Navbar />
       {children}
     </div>
