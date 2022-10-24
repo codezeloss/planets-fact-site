@@ -67,17 +67,47 @@ const Planet = ({
     setStructureIsClicked(false);
   };
 
-  const btnClasses = `${
+  const colors = `py-[20px] ${
     overviewClicked
       ? `${currentRoute === "/mercury" ? "bg-dark-cyan" : ""} ${
           currentRoute === "/venus" ? "bg-light-orange" : ""
         } ${currentRoute === "/earth" ? "bg-purple" : ""} ${
           currentRoute === "/mars" ? "bg-light-red" : ""
         } ${currentRoute === "/jupiter" ? "bg-red" : ""} ${
-          currentRoute === "/saturn" ? "bg-cyan" : ""
+          currentRoute === "/saturn" ? "bg-dark-orange" : ""
         } ${currentRoute === "/uranus" ? "bg-cyan" : ""} ${
           currentRoute === "/neptune" ? "bg-dark-blue" : ""
         }`
+      : ""
+  }`;
+
+  const navClasses = `py-[20px] ${
+    currentRoute === "/mercury"
+      ? "border-b-dark-cyan border-b-[4px] text-white"
+      : ""
+  } ${
+    currentRoute === "/venus"
+      ? "border-b-light-orange border-b-[4px] text-white"
+      : ""
+  } ${
+    currentRoute === "/earth" ? "border-b-purple border-b-[4px] text-white" : ""
+  } ${
+    currentRoute === "/mars"
+      ? "border-b-light-red border-b-[4px] text-white"
+      : ""
+  } ${
+    currentRoute === "/jupiter" ? "border-b-red border-b-[4px] text-white" : ""
+  } ${
+    currentRoute === "/saturn"
+      ? "border-b-dark-orange border-b-[4px] text-white"
+      : ""
+  } ${
+    currentRoute === "/uranus"
+      ? "border-b-cyan border-b-[4px] text-white cyan"
+      : ""
+  } ${
+    currentRoute === "/neptune"
+      ? "border-b-dark-blue border-b-[4px] text-white "
       : ""
   }`;
 
@@ -85,42 +115,18 @@ const Planet = ({
     <>
       <div className="hidden 3bp:flex flex-row font-spartan font-bold text-[14px] leading-[10px] tracking-[1.92857px] uppercase text-white/[.5] px-[32px] justify-between items-center border-b-[1px] border-b-gray/[.2]">
         <div className="cursor-pointer" onClick={overviewClickHandler}>
-          <p
-            className={`py-[20px] ${
-              overviewClicked
-                ? `border-b-${bgColor} border-b-[4px] text-white`
-                : ""
-            }`}
-          >
-            Overview
-          </p>
+          <p className={overviewClicked ? navClasses : ""}>Overview</p>
         </div>
         <div className="cursor-pointer" onClick={structureClickHandler}>
-          <p
-            className={`py-[20px] ${
-              structureClicked
-                ? `border-b-${bgColor} border-b-[4px] text-white`
-                : ""
-            }`}
-          >
-            Structure
-          </p>
+          <p className={structureClicked ? navClasses : ""}>Structure</p>
         </div>
         <div className="cursor-pointer" onClick={geologyClickHandler}>
-          <p
-            className={`py-[20px] ${
-              geologyClicked
-                ? `border-b-${bgColor} border-b-[4px] text-white`
-                : ""
-            }`}
-          >
-            Surface
-          </p>
+          <p className={geologyClicked ? navClasses : ""}>Surface</p>
         </div>
       </div>
       <div className="w-[1108px] mx-auto p-[1.8rem] mt-[150px] mb-[56px] 1bp:mt-[146px] 1bp:w-[100%] relative z-[20] 3bp:mt-[50px]">
         <div className="mb-[87px] flex justify-between 1bp:flex-col 1bp:gap-[130px] 1bp:w-[100%] 2bp:mb-[27px] 3bp:gap-[50px]">
-          <div className="flex justify-center items-center w-[100%]">
+          <section className="flex justify-center items-center w-[100%]">
             <div>
               {overviewClicked && (
                 <motion.div
@@ -196,10 +202,10 @@ const Planet = ({
                 </div>
               )}
             </div>
-          </div>
+          </section>
 
           <div className="w-[350px] 1bp:w-[100%] 1bp:flex 1bp:gap-[69px] 1bp:flex-row 1bp:items-center 1bp:justify-between">
-            <div className="1bp:w-[100%] 3bp:text-center">
+            <section className="1bp:w-[100%] 3bp:text-center">
               <p className="font-antonio font-normal text-[80px] leading-[104px] uppercase text-white mb-[24px] 2bp:text-[48px]">
                 {title}
               </p>
@@ -230,9 +236,9 @@ const Planet = ({
                   />
                 </div>
               </div>
-            </div>
+            </section>
 
-            <div className={`flex flex-col space-y-[16px] 3bp:hidden`}>
+            <section className={`flex flex-col space-y-[16px] 3bp:hidden`}>
               <div onClick={overviewClickHandler}>
                 <Button
                   num="01"
@@ -254,7 +260,7 @@ const Planet = ({
                   color={`${geologyClicked ? `${bgColor}` : ""}`}
                 />
               </div>
-            </div>
+            </section>
           </div>
         </div>
 

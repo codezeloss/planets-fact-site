@@ -4,6 +4,21 @@ interface Props {
   navBtnClicked: any;
 }
 
+const colors = {
+  white: "#FFFFFF",
+  "universe-blue": "#070724",
+  "dark-gray": "#38384F",
+  gray: "#838391",
+  "dark-cyan": "#419EBB",
+  "light-orange": "#EDA249",
+  purple: "#6f2ed6",
+  "light-red": "#D14C32",
+  red: "#D83A34",
+  "dark-orange": "#CD5120",
+  cyan: "#1ec2a4",
+  "dark-blue": "#2d68f0",
+};
+
 const NavMobile = ({ navBtnClicked }: Props) => {
   return (
     <>
