@@ -7,7 +7,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className={`bg-${stars}`}>
+    <div className={`bg-[${stars}]`}>
       <Navbar />
       {children}
     </div>
