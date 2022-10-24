@@ -5,6 +5,7 @@ import icons from "../constants/icons";
 import Button from "./Button";
 import Stat from "./Stat";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 interface Props {
   imageOverview: string;
   imageStructure: string;
@@ -38,6 +39,9 @@ const Planet = ({
   tempInfo,
   bgColor,
 }: Props) => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   const [overviewClicked, setOverviewIsClicked] = useState(true);
   const [structureClicked, setStructureIsClicked] = useState(false);
   const [geologyClicked, setGeologyIsClicked] = useState(false);
@@ -62,6 +66,20 @@ const Planet = ({
     setOverviewIsClicked(false);
     setStructureIsClicked(false);
   };
+
+  const btnClasses = `${
+    overviewClicked
+      ? `${currentRoute === "/mercury" ? "bg-dark-cyan" : ""} ${
+          currentRoute === "/venus" ? "bg-light-orange" : ""
+        } ${currentRoute === "/earth" ? "bg-purple" : ""} ${
+          currentRoute === "/mars" ? "bg-light-red" : ""
+        } ${currentRoute === "/jupiter" ? "bg-red" : ""} ${
+          currentRoute === "/saturn" ? "bg-cyan" : ""
+        } ${currentRoute === "/uranus" ? "bg-cyan" : ""} ${
+          currentRoute === "/neptune" ? "bg-dark-blue" : ""
+        }`
+      : ""
+  }`;
 
   return (
     <>
@@ -214,37 +232,26 @@ const Planet = ({
               </div>
             </div>
 
-            <div
-              className={`flex flex-col space-y-[16px] 3bp:hidden`}
-            >
-              <div
-                onClick={overviewClickHandler}
-                className={`${overviewClicked ? "bg-white" : " "}`}
-              >
+            <div className={`flex flex-col space-y-[16px] 3bp:hidden`}>
+              <div onClick={overviewClickHandler}>
                 <Button
                   num="01"
                   text="Overview"
-                  color={`${overviewClicked ? "text-universe-blue" : " "}`}
+                  color={`${overviewClicked ? `${bgColor}` : ""}`}
                 />
               </div>
-              <div
-                onClick={structureClickHandler}
-                className={`${structureClicked ? "bg-white" : " "}`}
-              >
+              <div onClick={structureClickHandler}>
                 <Button
                   num="02"
                   text="Internal Structure"
-                  color={`${structureClicked ? "text-universe-blue" : " "}`}
+                  color={`${structureClicked ? `${bgColor}` : ""}`}
                 />
               </div>
-              <div
-                onClick={geologyClickHandler}
-                className={`${geologyClicked ? "bg-white" : " "}`}
-              >
+              <div onClick={geologyClickHandler}>
                 <Button
                   num="03"
                   text="Surface Geology"
-                  color={`${geologyClicked ? "text-universe-blue" : " "}`}
+                  color={`${geologyClicked ? `${bgColor}` : ""}`}
                 />
               </div>
             </div>
